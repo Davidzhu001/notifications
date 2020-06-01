@@ -64,8 +64,15 @@ Get unread notifications count for a user:
 # unread count
 unread_count = Notification.unread_count(current_user)
 
+# unread_by items
+unread_count = Notification.unread_by(current_user)
+
+
 # read count
 read_count = Notification.read_count(current_user)
+
+# read items
+unread_count = Notification.read_by(current_user)
 
 ```
 

@@ -48,6 +48,15 @@ module Notifications
         Notification.where(user: user).unread.count
       end
 
+
+      def unread_by(user)
+        Notification.where(user: user).unread
+      end
+
+      def read_by(user)
+        Notification.where(user: user).read
+      end
+
       def read_count(user)
         Notification.where(user: user).read.count
       end
